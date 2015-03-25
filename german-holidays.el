@@ -57,8 +57,6 @@
     (holiday-fixed 12 25 "1. Weihnachtstag")
     (holiday-fixed 12 26 "2. Weihnachtstag")))
 
-(setq holiday-other-holidays holiday-german-holidays)
-
 (provide 'german-holidays)
 
 ;;; german-holidays.el ends here
