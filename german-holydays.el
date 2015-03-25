@@ -25,6 +25,8 @@
 ;;
 ;; (setq holiday-other-holidays holiday-german-holidays)
 ;;
+;; in your .emacs or init.el
+;;
 
 ;;; Credits
 ;;
