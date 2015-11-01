@@ -21,11 +21,15 @@
 
 ;;; Commentary:
 ;;
-;; To install `german-holidays':
+;; Installation:
 ;;
-;; (setq holiday-other-holidays holiday-german-holidays)
+;; To use `german-holidays' exclusively
 ;;
-;; in your .emacs or init.el
+;;  (setq calendar-holidays holiday-german-holidays)
+;;
+;; To use 'german-holidays' additionally
+;;
+;;  (setq calendar-holidays (append calendar-holidays holiday-german-holidays))
 ;;
 
 ;;; Credits
