@@ -41,6 +41,18 @@
   (require 'calendar)
   (require 'holidays))
 
+(defvar holiday-national-german-holidays
+  '((holiday-fixed 1 1 "Neujahr")
+    (holiday-easter-etc -2 "Karfreitag")
+    (holiday-easter-etc 1 "Ostermontag")
+    (holiday-fixed 5 1 "Tag der Arbeit")
+    (holiday-easter-etc 39 "Christi Himmelfahrt")
+    (holiday-easter-etc 50 "Pfingstmontag")
+    (holiday-fixed 10 3 "Tag der Deutschen Einheit")
+    (holiday-fixed 12 25 "1. Weihnachtstag")
+    (holiday-fixed 12 26 "2. Weihnachtstag"))
+  "Holidays valid in all german states, called 'bundeseinheitlich'.")
+
 (defvar holiday-german-holidays
   '((holiday-fixed 1 1 "Neujahr")
     (holiday-fixed 1 6 "Heilige Drei Könige")
