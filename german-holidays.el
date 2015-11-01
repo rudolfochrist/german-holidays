@@ -51,7 +51,7 @@
     (holiday-fixed 10 3 "Tag der Deutschen Einheit")
     (holiday-fixed 12 25 "1. Weihnachtstag")
     (holiday-fixed 12 26 "2. Weihnachtstag"))
-  "Holidays valid in all german states, called 'bundeseinheitlich'.")
+  "Holidays valid in all German states, called 'bundeseinheitlich'.")
 
 (defvar holiday-german-holidays
   '((holiday-fixed 1 1 "Neujahr")
