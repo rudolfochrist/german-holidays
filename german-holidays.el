@@ -41,7 +41,7 @@
   (require 'calendar)
   (require 'holidays))
 
-(defvar holiday-german-national-holidays
+(defvar holiday-german--national-holidays
   '((holiday-fixed 1 1 "Neujahr")
     (holiday-easter-etc -2 "Karfreitag")
     (holiday-easter-etc 1 "Ostermontag")
@@ -53,7 +53,7 @@
     (holiday-fixed 12 26 "2. Weihnachtstag"))
   "Holidays valid in all German states, called 'bundeseinheitlich'.")
 
-(defvar holiday-german-holiday-alist
+(defvar holiday-german--holiday-alist
   '((epiphany (holiday-fixed 1 6 "Heilige Drei Könige"))
     (easter (holiday-easter-etc 0 "Ostersonntag"))
     (whit-sunday (holiday-easter-etc 49 "Pfingstsonntag"))
@@ -64,13 +64,13 @@
     (penance-day (holiday-float 11 3 -1 "Buß- und Bettag" 22)))
   "Alist of German holidays with state-specific validity.")
 
-(defun holiday-german-state-holidays (includes)
+(defun holiday-german--state-holidays (includes)
   "Constructs a state-specific list of holidays.
 
-INCLUDES are holidays added to the `holiday-german-national-holidays'."
-  (append holiday-german-national-holidays
+INCLUDES are holidays added to the `holiday-german--national-holidays'."
+  (append holiday-german--national-holidays
           (mapcar (lambda (key)
-                    (second (assoc key holiday-german-holiday-alist)))
+                    (second (assoc key holiday-german--holiday-alist)))
                   includes)))
 
 (provide 'german-holidays)
