@@ -64,6 +64,15 @@
     (penance-day (holiday-float 11 3 -1 "Buß- und Bettag" 22)))
   "Alist of German holidays with state-specific validity.")
 
+(defun holiday-german-state-holidays (includes)
+  "Constructs a state-specific list of holidays.
+
+INCLUDES are holidays added to the `holiday-german-national-holidays'."
+  (append holiday-german-national-holidays
+          (mapcar (lambda (key)
+                    (second (assoc key holiday-german-holiday-alist)))
+                  includes)))
+
 (provide 'german-holidays)
 
 ;;; german-holidays.el ends here
