@@ -80,7 +80,7 @@
 INCLUDES are holidays added to the `holiday-german--national-holidays'."
   (append holiday-german--national-holidays
           (mapcar (lambda (key)
-                    (second (assoc key holiday-german--holiday-alist)))
+                    (cadr (assoc key holiday-german--holiday-alist)))
                   includes)))
 
 (defvar holiday-german-BW-holidays
@@ -146,7 +146,7 @@ INCLUDES are holidays added to the `holiday-german--national-holidays'."
 
 (defvar holiday-german-holidays
   (holiday-german--state-holidays
-   (mapcar #'first holiday-german--holiday-alist))
+   (mapcar #'car holiday-german--holiday-alist))
   "All legal holidays in Germany.")
 
 (provide 'german-holidays)
