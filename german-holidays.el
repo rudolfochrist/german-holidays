@@ -73,6 +73,72 @@ INCLUDES are holidays added to the `holiday-german--national-holidays'."
                     (second (assoc key holiday-german--holiday-alist)))
                   includes)))
 
+(defvar holiday-german-BW-holidays
+  (holiday-german--state-holidays '(epiphany corpus-christi all-saints-day))
+  "Holidays for Baden Wuerttemberg.")
+
+(defvar holiday-german-BY-holidays
+  (holiday-german--state-holidays
+   '(epiphany corpus-christi assumption-day all-saints-day))
+  "Holidays for Bavaria.")
+
+(defvar holiday-german-BE-holidays holiday-german--national-holidays
+  "Holidays for Berlin.")
+
+(defvar holiday-german-BB-holidays
+  (holiday-german--state-holidays '(easter whit-sunday reformation-day))
+  "Holidays for Brandenburg.")
+
+(defvar holiday-german-HB-holidays holiday-german--national-holidays
+  "Holidays for Bremen.")
+
+(defvar holiday-german-HH-holidays holiday-german--national-holidays
+  "Holidays for Hamburg.")
+
+(defvar holiday-german-HE-holidays
+  (holiday-german--state-holidays '(corpus-christi))
+  "Holidays for Hesse.")
+
+(defvar holiday-german-MV-holidays
+  (holiday-german--state-holidays '(reformation-day))
+  "Holidays for Mecklenburg West Pomerania.")
+
+(defvar holiday-german-NI-holidays holiday-german--national-holidays
+  "Holidays for Lower Saxony.")
+
+(defvar holiday-german-NW-holidays
+  (holiday-german--state-holidays '(corpus-christi all-saints-day))
+  "Holidays for Northrhine Westphalia.")
+
+(defvar holiday-german-RP-holidays
+  (holiday-german--state-holidays '(corpus-christi all-saints-day))
+  "Holidays for Rhineland Palatinate.")
+
+(defvar holiday-german-SL-holidays
+  (holiday-german--state-holidays
+   '(corpus-christi assumption-day all-saints-day))
+  "Holidays for Saarland.")
+
+(defvar holiday-german-SN-holidays
+  (holiday-german--state-holidays '(reformation-day penance-day))
+  "Holidays for Saxony.")
+
+(defvar holiday-german-ST-holidays
+  (holiday-german--state-holidays '(epiphany reformation-day))
+  "Holidays for Saxony Anhalt.")
+
+(defvar holiday-german-SH-holidays holiday-german--national-holidays
+  "Holidays for Schleswig Holstein.")
+
+(defvar holiday-german-TH-holidays
+  (holiday-german--state-holidays '(reformation-day))
+  "Holidays for Thuringia.")
+
+(defvar holiday-german-holidays
+  (holiday-german--state-holidays
+   (mapcar #'first holiday-german--holiday-alist))
+  "All legal holidays in Germany.")
+
 (provide 'german-holidays)
 
 ;;; german-holidays.el ends here
