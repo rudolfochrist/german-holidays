@@ -41,7 +41,7 @@
   (require 'calendar)
   (require 'holidays))
 
-(defvar holiday-national-german-holidays
+(defvar holiday-german-national-holidays
   '((holiday-fixed 1 1 "Neujahr")
     (holiday-easter-etc -2 "Karfreitag")
     (holiday-easter-etc 1 "Ostermontag")
