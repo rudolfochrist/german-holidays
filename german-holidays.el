@@ -38,7 +38,7 @@
 ;; This works for for all states:
 ;;
 ;;  `holiday-german-BW-holidays'
-;;  `holiday-german-HE-hoidays'
+;;  `holiday-german-HE-holidays'
 ;;  `holiday-german-HH-holidays'
 ;;  etc.
 ;;
