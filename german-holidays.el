@@ -113,7 +113,8 @@ INCLUDES are holidays added to the `holiday-german--national-holidays'."
   (holiday-german--state-holidays '(reformation-day))
   "Holidays for Mecklenburg West Pomerania.")
 
-(defvar holiday-german-NI-holidays holiday-german--national-holidays
+(defvar holiday-german-NI-holidays
+  (holiday-german--state-holidays '(reformation-day))
   "Holidays for Lower Saxony.")
 
 (defvar holiday-german-NW-holidays
